@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>C++ Primer Plus 学习笔记</title>
+    <url>/2021/01/02/C-Primer-Plus-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><ul>
+<li>Windows常用编译器：Cygwin, MinGW。</li>
+<li>先将源代码编译为目标代码文件，其后缀为.o，然后再链接其他程序，最后成为一个可运行程序a.out/a.exe。</li>
+</ul>
+<a id="more"></a>
+
+<hr>
+<h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><ul>
+<li><p>命名空间 <code>using namespace std;</code> 相当于将整个名称空间导入。<br>  可以只导入需要的部分，如：</p>
+  <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cout</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">cin</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>endl</code> 和 <code>\n</code> 的区别：<br>  endl会确保程序在继续运行前刷新输出，将内容立即显示在屏幕上。而’\n’并没有这样的机制。因此在某些情况下，可能会出现直到用户输入之后提示信息才显示的bug。</p>
+</li>
+<li><p>一行代码中不可分割的元素叫做标记(token)，空格、制表符和回车统称为空白(white space)。</p>
+</li>
+<li><p>连续使用赋值运算符，赋值将从右向左进行。</p>
+  <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 88先赋值给steinway,然后steinway的值赋给baldwin，之后相同。</span></span><br><span class="line">yamaha = baldwin = steinway = <span class="number">88</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>C++程序应当为程序中使用的每个函数提供原型</p>
+</li>
+<li><p>关键字void指出函数不接受任何参数。如果省略void，让括号为空，则C++将其解释为一个不接受任何参数的隐式声明。</p>
+  <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">rand</span><span class="params">(<span class="keyword">void</span>)</span></span>;</span><br><span class="line"><span class="keyword">int</span> x = rand();</span><br></pre></td></tr></table></figure></li>
+<li><p>C++不允许将函数定义嵌套在另一个函数定义中</p>
+</li>
+<li><p>命名空间的位置: “只让需要访问名称空间std的函数访问它是更好的选择”.</p>
+<ul>
+<li>将 <code>using namespace std;</code> 放在函数定义之前，让文件中的所有函数都能够使用std中的所有元素。</li>
+<li>将 <code>using namespace std;</code> 放在特定的函数定义中，让该函数能够使用std中的所有元素。</li>
+<li>在特定的函数中使用类似 <code>using std::cout;</code> 这样的编译指令，而不是 <code>using namespace std;</code>，让该函数能够使用指定的元素，如cout。</li>
+<li>完全不使用编译指令 <code>using</code>，而在需要使用std中的元素时，使用前缀 <code>std::</code>，如 <code>std::cout&lt;&lt;&quot;hello world&quot;&lt;&lt;endl;</code>。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Coding</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>地平线4车辆汇总</title>
+    <url>/2021/05/19/%E5%9C%B0%E5%B9%B3%E7%BA%BF4%E8%BD%A6%E8%BE%86%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h2 id="福特-福克斯-RS-Ford-Focus-RS-2017"><a href="#福特-福克斯-RS-Ford-Focus-RS-2017" class="headerlink" title="福特 福克斯 RS // Ford Focus RS 2017"></a>福特 福克斯 RS // Ford Focus RS 2017</h2><img src="/2021/05/19/%E5%9C%B0%E5%B9%B3%E7%BA%BF4%E8%BD%A6%E8%BE%86%E6%B1%87%E6%80%BB/Ford%20Focus%20RS%202017_1.jpg" class="" title="Ford Focus RS 2017_1">
+
+<a id="more"></a>
+
+<img src="/2021/05/19/%E5%9C%B0%E5%B9%B3%E7%BA%BF4%E8%BD%A6%E8%BE%86%E6%B1%87%E6%80%BB/Ford%20Focus%20RS%202017_2.jpg" class="" title="Ford Focus RS 2017_2">
+
+<h2 id="奥迪-TTS-Coupe-Audi-TTS-Coupe"><a href="#奥迪-TTS-Coupe-Audi-TTS-Coupe" class="headerlink" title="奥迪 TTS Coupe // Audi TTS Coupe"></a>奥迪 TTS Coupe // Audi TTS Coupe</h2><h2 id="道奇-Charger-R-T-Dodge-Charger-R-T"><a href="#道奇-Charger-R-T-Dodge-Charger-R-T" class="headerlink" title="道奇 Charger R/T // Dodge Charger R/T"></a>道奇 Charger R/T // Dodge Charger R/T</h2><h2 id="福特-Escort-RS-Cosworth-Ford-Escort-RS-Cosworth"><a href="#福特-Escort-RS-Cosworth-Ford-Escort-RS-Cosworth" class="headerlink" title="福特 Escort RS Cosworth // Ford Escort RS Cosworth"></a>福特 Escort RS Cosworth // Ford Escort RS Cosworth</h2><h2 id="斯巴鲁-Impreza-WRX-STI-Subaru-Impreza-WRX-STI"><a href="#斯巴鲁-Impreza-WRX-STI-Subaru-Impreza-WRX-STI" class="headerlink" title="斯巴鲁 Impreza WRX STI // Subaru Impreza WRX STI"></a>斯巴鲁 Impreza WRX STI // Subaru Impreza WRX STI</h2><h2 id="蓝旗亚-037-Stradale-Lancia-037-Stradale"><a href="#蓝旗亚-037-Stradale-Lancia-037-Stradale" class="headerlink" title="蓝旗亚 037 Stradale // Lancia 037 Stradale"></a>蓝旗亚 037 Stradale // Lancia 037 Stradale</h2>]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+      <tags>
+        <tag>地平线4</tag>
+      </tags>
+  </entry>
+</search>
